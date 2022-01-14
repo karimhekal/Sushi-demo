@@ -1,0 +1,90 @@
+.button {
+  height: max-content;
+  /* width: 35vw; */
+  width: max-content;
+
+  /* width: fit-content; */
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color:#3b51778f;
+  color: white;
+  padding: 0.75rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 0.875em;
+}
+
+.button:hover,
+.button:active {
+  background-color: #15294db4;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: #071329ab;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  background-color: #24488bd2;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+ 5% {
+    transform: scale(0.9);
+  }
+  10% {
+    transform: scale(0.8);
+  }
+  15% {
+    transform: scale(0.7);
+  }
+  20% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  35% {
+    transform: scale(1.3);
+  }
+  40% {
+    transform: scale(1.4);
+  }
+  
+  60% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
